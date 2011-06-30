@@ -1,0 +1,25 @@
+// solve problem1 of project Euler: add all multiples of 3 or 5 below 1000
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+  int N[2] = 3;// multiples of which we want to sum to sum
+  int max = 1000;// maximum number to sum to
+
+  int total = 0;
+
+  for(int i=1; i<2;i++){
+    int max_multiplier = max/N[i];
+    total += i;
+  }
+
+  cout << total << endl;
+
+}
+
+
+
+  
